@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/stylesheets/a.css">
+</head>
+<body>
+    <div class="flex items-center justify-center mt-6">
+        <h1 class="text-lg font-bold text-center">Top Doctor</h1>
+      </div>
+
+      <div class="flex flex-wrap  mt-7 mx-10 gap-6 ">
+        <% user.forEach(function(user){%>
+
+            <div class="bg-white p-4 border-2 shadow-md rounded w-32  sm:w-40 md:w-48   ">
+                <img src="<%= user.image %>" alt="" class="rounded transform-doc">
+         <br> <h2 class="font-bold"><%= user.name %></h2>
+          <samp class="text-gray-500"><%= user.title %></samp>
+        </div>
+        <div class="bg-white p-4 border-2 shadow-md rounded w-32 sm:w-40 md:w-48 transform-doc">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwk4dWl_PNeohCcCtlXLFED41Mj-BZ2d9A5i5NG4Qa4_bASMvfu2ofrIRX_VCjsYSeIM&usqp=CAU" alt="" class="rounded transform-img">
+                <br> <h2 class="font-bold">Dr.Aqib Samaro</h2>
+                <samp class="text-gray-500"> Dentel Sergon</samp>
+            
+            </div>
+            <div class="bg-white p-4 border-2 shadow-md rounded w-32 sm:w-40 md:w-48 transform-doc">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwk4dWl_PNeohCcCtlXLFED41Mj-BZ2d9A5i5NG4Qa4_bASMvfu2ofrIRX_VCjsYSeIM&usqp=CAU" alt="" class="rounded transform-img">
+                    <br> <h2 class="font-bold">Dr.Aqib Samaro</h2>
+                    <samp class="text-gray-500"> Dentel Sergon</samp>
+                
+                </div>
+                <div class="bg-white p-4 border-2 shadow-md rounded w-32 sm:w-40 md:w-48 transform-doc">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJwk4dWl_PNeohCcCtlXLFED41Mj-BZ2d9A5i5NG4Qa4_bASMvfu2ofrIRX_VCjsYSeIM&usqp=CAU" alt="" class="rounded transform-img">
+                        <br> <h2 class="font-bold">Dr.Aqib Samaro</h2>
+                        <samp class="text-gray-500"> Dentel Sergon</samp>
+                    
+                    </div>
+        <% }) %>
+        </div>
+        
+    
+</body>
+</html>

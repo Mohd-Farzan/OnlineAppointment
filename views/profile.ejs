@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .relative {
+            position: relative;
+        }
+        .absolute {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        .icon-button {
+            top: 25px;
+            right:26px;
+            width: 40px; 
+            height: 40px;
+            border: 2px solid #3b82f6; 
+            border-radius: 50%; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white; 
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<!-- <body class="flex items-center justify-center mt-6 bg-gray-100"> -->
+<div  class="flex items-center justify-center  bg-gray-100">
+    <div class="bg-white shadow-md rounded-lg m-6 p-6 w-1/8 relative">
+        <h2 class="text-lg font-bold mb-4 text-center bg-blue-500 text-white p-2 rounded border-none">Personal Info</h2>
+        
+        <button class="icon-button absolute">
+            <i class="fas fa-edit text-blue-500"></i> 
+        </button>
+
+        <div class="grid grid-cols-2 gap-4 mt-8">
+            <div class="flex items-center">
+                <label class="mr-2">Name:</label>
+                <input type="text" class="border rounded-md px-2 py-1 w-full border-none" value="Adil">
+            </div>
+            <div class="flex items-center">
+                <label class="mr-2 ">Date of Birth:</label>
+                <input type="date" class="border rounded-md px-2 py-1 w-full border-none border-none" value="2000-01-11">
+            </div>
+
+            <div class="flex items-center">
+                <label class="mr-2">Gender:</label>
+                <input type="text" class="border rounded-md px-2 py-1 w-full border-none" value="Male">
+            </div>
+            <div class="flex items-center">
+                <label class="mr-2">Phone:</label>
+                <input type="tel" class="border rounded-md px-2 py-1 w-full border-none" value="018868*37">
+            </div>
+
+            <div class="flex items-center">
+                <label class="mr-2">Email:</label>
+                <input type="email" class="border rounded-md px-2 py-1 w-full border-none" value="adil123@gmail.com">
+            </div>
+            <div class="flex items-center">
+                <label class="mr-2">Location:</label>
+                <input type="text" class="border rounded-md px-2 py-1 w-full border-none" value="India">
+            </div>
+        </div>
+    </div>
+</div>
+          </body>
+</html>
