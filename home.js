@@ -4,9 +4,8 @@ const path=require("path");
 app.set("view engine","e.js");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const userModel=require("./model/contol")
 app.use(express.static(path.join(__dirname,'public')));
-app.use(express.static(path.join(__dirname,'model')));
+
 
 // remoe after create
 
@@ -22,19 +21,19 @@ app.get("/",function(req,res){
  app.get("/show",function(req,res){
     res.render("create.ejs")
 })
-app.post("/create" , async (req,res)=>{
-    let {name,title,image}=req.body 
-   let u= await userModel.create({
-      name,
-      title,
-      image
-    });
-    res.send(u)
-  })
-  app.get("/read" , async (req,res)=>{
-    let user=await userModel.find();
-    res.render('doc.ejs',{user});
-  })
+// app.post("/create" , async (req,res)=>{
+//     let {name,title,image}=req.body 
+//    let u= await userModel.create({
+//       name,
+//       title,
+//       image
+//     });
+//     res.send(u)
+//   })
+  // app.get("/read" , async (req,res)=>{
+  //   let user=await userModel.find();
+  //   res.render('doc.ejs',{user});
+  // })
   
 app.get("/user",function(req,res){
     res.render("profile.ejs");
